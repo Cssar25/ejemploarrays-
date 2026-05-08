@@ -1,0 +1,125 @@
+
+
+/* BODY */
+body{
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.contenedor-principal{
+    width: 90%;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+/* LOGIN */
+.login-box{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* TITULO */
+.login-box h1{
+    text-align: center;
+    color: #1877f2;
+}
+
+/* INPUT */
+input{
+    padding: 12px;
+    font-size: 16px;
+}
+
+/* BOTONES */
+button{
+    padding: 12px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: #0d5fd1;
+}
+
+/* OCULTAR */
+.oculto{
+    display: none;
+}
+
+/* HEADER */
+.header-app{
+    background-color: #1877f2;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* CREAR POST */
+.crearUnPost{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* TEXTAREA */
+textarea{
+    resize: none;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* POSTS */
+.post{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+}
+
+/* TEXTO POST */
+.post p{
+    font-size: 18px;
+}
+
+/* BOTONES POSTS */
+.botones-post{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* BOTON LIKE */
+.btn-like{
+    background-color: #28a745;
+}
+
+.btn-like:hover{
+    background-color: #1f7d34;
+}
+
+/* BOTON ELIMINAR */
+.btn-eliminar{
+    background-color: #dc3545;
+}
+
+.btn-eliminar:hover{
+    background-color: #b02a37;
+}

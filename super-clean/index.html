@@ -2,89 +2,83 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Super Clean</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POST BLUE</title>
+<!-- ESPACIO PARA INGRESAR BOOSTRAP   PREGUNTARLE A EL PROFE-->
+
+<!-- ESPACIO PARA CSS -->
+ 
+<link rel="stylesheet" href="style.css">
 
 </head>
+
+
 <body>
-<div class="contenedor principal">
 
-
-
-
-  <div class="header">
-    
-    <h1>SUPER CLEAN</h1>
-    <p>Expertos en lavado profesional de muebles</p>
-   </div>
-
-
-  // menu 
-  <div class="menu">
-   <ul>
-         <li><a href="#">Inicio</a></li>
-         <li><a href="#">Servicios</a></li>
-         <li><a href="#">Nosotros</a></li>
-         <li><a href="#">Contaco</a></li>
-   </ul>
-  </div>
- // parte principal
- <div class="Principal">
-
-    <h2>¡Tus muebles como nuevos!</h2>
-    <p>Lavado profesional de sofas, colchones, sillas y tapetes</p>
-
- <button id="botonMensaje">Solicitar servicio</button>
-
-</div>
-
-// servicios 
-
-<div class="Servicios">
-
-    <h2>Nuestros servicios</h2>
-</div>
-
-// tarjetas 
-
-<div class="contenedor-cards">
-  
-  
-    // card 1
-
-    <div class="card">
-
-    <h3>Lavado de sofas</h3>
-    <p>Eliminamos toda clase de manchas y malos olores</p>
-
-     </div>
-
-     // card 2 
-
-     <div class="card">
+    <!-- contenedor principal -->
+<div class="contenedor-principal">
    
-    <h3>Lavado de colchones</h3>
-    <p>Limpienza profunda y adecuada ante cualquier material</p>
+   
+   
+    <!-- login -->
+<div class="login-box" id="login box">  
 
-     </div>
+<h1>POST BLUE</h1>
+
+      <input type="text" id="usuario" placeholder="Ingresa tu usuario">
  
- // card 3 
-
- <div class="card">
-
-    
- </div>
-
-
+      <button id="btnLogin">INICIAR SESION</button> 
 
 </div>
 
+<!-- inicio -->
+
+<div id="redSocial" class="oculto">
+       
+    <!-- header -->
+
+    <div class="header-app">
+
+     <h2>Bienvenido a POST BLUE </h2>
+
+    </div>
 
 
+    <!-- crear una publicacion  -->
+
+    <div class="crearUnPost">
+        <textarea id="comentario" placeholder="que pasa por tu imaginacion?"></textarea>
+
+        
+
+        <button id="btnPublicar">Publicar</button>
+
+    </div>
+
+<!-- contenedor del post -->
+  <div id="contenedorPost"></div>
+  
 
 </div>
+ 
+</div> 
+
+
+
+
+
+
+<!-- AQUI VA EL SCRIPT -->
+
+
+
+<script src="script.js"></script>
+
+
+
+
 
 
 
 </body>
-</html> 
+</html>
