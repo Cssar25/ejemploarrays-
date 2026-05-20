@@ -1,100 +1,152 @@
-// elementos 
+// ELEMENTOS
 
 const btnLogin = document.getElementById("btnLogin");
 
-const loginBox = document.getElementById("loginBox");
+   const loginBox = document.getElementById("login-box");
+
+
+
 
 const redSocial = document.getElementById("redSocial");
+ 
+
+ 
 
 const comentario = document.getElementById("comentario");
 
 const btnPublicar = document.getElementById("btnPublicar");
 
-const contenedorPosts = document.getElementById("contenedorPosts");
+const contenedorPosts = document.getElementById("contenedorPost");
 
 
-// login 
+// LOGIN
 
-btnLogin.addEventListener("click", function(){
-    const usuario = document.getElementById("usuario").value; 
+
+
+
  
-    if(usuario === ""){
-        alert("debes ingresar un usuario");
+btnLogin.addEventListener("click", function () {
 
-    } else{
-        loginBox.classList.add("oculto");
+    const usuario = document.getElementById("usuario").value;
+    const password = document.getElementById("password").value;
+    if (usuario === "" || password === "") {
+
+        alert("Debes ingresar un usuario y contraseña");
+
+    } else {
+
+        loginBox.classList.add("oculto");   
 
         redSocial.classList.remove("oculto");
     }
 
-
-
-}); 
-
-
-// publicar 
-
-btnPublicar.addEventListener("click", function(){
-    const texto = comentario.value;
-
-
-    if(texto === "");{
-      
-        alert("escribe cualqueir cosa");
-      return;
-    
-    }
 });
 
 
-// crear el div 
+// PUBLICAR
 
-const post = document.createElement("div");
-
-// agregar  claase 
-
-post.classList.add("post");
+btnPublicar.addEventListener("click", function () {
 
 
-let likes = 0;
+
+
+    const texto = comentario.value;
  
-// html 
-post.innerHTML = `
+ 
+ 
+    if (texto === "") {
+
+        alert("Escribe cualquier cosa");
+        return;
+    }
+
+
+
+
+    // CREAR DIV
+
+    
+    
+    const post = document.createElement("div");
+
+
+
+
+    // AGREGAR CLASE
+
+    post.classList.add("post");
+
+    let likes = 0;
+
+    // HTML DEL POST
+
+    post.innerHTML = `
+
+
+
 
         <p>${texto}</p>
 
-        <div class="botones-post">
-        
-        <button class="btn-like">
-        like ❤️ 0 </button>
+             <div class="botones-post">
+                 
+             
+            <img src="https://i.pravatar.cc/50" class="avatar">
+            
+            <button class="btn-like">
+                Like ❤️ 0
+            </button>
 
-         <button class="btn-eliminar">
-                Eliminar
+    
+    
+            <button class="btn-eliminar">
+    
+            Eliminar
             </button>
 
         </div>
-
     `;
 
-    // agregar post 
+    
+    
+    // AGREGAR POST
 
-    contenedor.Posts.prepend(post);
 
-    // limpia textarea 
 
-    comentario.value = ""; 
+    contenedorPosts.prepend(post);
 
-    // boton like 
-    const btnlike = post.querySelector(".btn-like");
-    btnlike.addEventListener("click", function(){
+
+
+    // LIMPIAR TEXTAREA
+
+    comentario.value = "";
+
+
+
+    // BOTÓN LIKE
+
+
+
+    const btnLike = post.querySelector(".btn-like");
+
+    btnLike.addEventListener("click", function () {
+
         likes++;
-        btnlike.textContent = "like ❤️ ${likes}";
+
+        btnLike.textContent = `Like ❤️ ${likes}`;
     });
 
 
-    // boton de eliminar 
+
+    // BOTÓN ELIMINAR
+
+
 
     const btnEliminar = post.querySelector(".btn-eliminar");
-    btnEliminar.addEventListener("click", function(){
+
+    btnEliminar.addEventListener("click", function () {
+
         post.remove();
+
     });
+
+});

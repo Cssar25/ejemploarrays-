@@ -1,5 +1,3 @@
-
-
 /* BODY */
 body{
     background-color: #f0f2f5;
@@ -92,18 +90,42 @@ textarea{
     border-radius: 10px;
     margin-bottom: 20px;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+
+    /* centra el contenido del post */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* TEXTO POST */
-.post p{
+/* AVATAR */
+.post-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* IMAGEN AVATAR CIRCULAR */
+.avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #1877f2;
+}
+
+/* TEXTO DEL POST */
+.texto-post{
     font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 /* BOTONES POSTS */
 .botones-post{
     display: flex;
     gap: 10px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 /* BOTON LIKE */
